@@ -1,0 +1,197 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="right">
+
+        <!-- ส่วน Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/tone1"
+            android:padding="8dp"
+            >
+
+            <TextView
+                android:id="@+id/app_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/pocket"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+        <!-- ส่วน Search Bar และวันที่ -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="8dp">
+
+            <EditText
+                android:id="@+id/searchBillText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/search_bill"
+                android:drawableStart="@drawable/ic_search"
+                android:background="@drawable/edittext_border"
+                android:padding="10dp"
+                android:textColorHint="@color/Hint" />
+
+            <TextView
+                android:id="@+id/editTextDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/edittext_background"
+                android:drawableStart="@drawable/baseline_calendar_month_24"
+                android:padding="10dp"
+                android:hint="@string/Select_date"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <!-- Calendar View -->
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/ic_calender_background"
+            android:dateTextAppearance="@style/CalenderViewDateCustomText"
+            android:theme="@style/CalendarViewCustom"
+            android:weekDayTextAppearance="@style/CalenderViewWeekCustomText" />
+
+        <!-- ประวัติการบันทึก -->
+        <TextView
+            android:id="@+id/History_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/history"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/tone1"/>
+
+        <!-- รายการบิล -->
+        <LinearLayout
+            android:id="@+id/history_list_main"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@drawable/border_background">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp">
+
+                <LinearLayout
+                    android:id="@+id/history_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!-- Goal Layout -->
+                    <LinearLayout
+                        android:id="@+id/Goal_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="8dp">
+
+                        <TextView
+                            android:id="@+id/goal_message"
+                            android:layout_width="168dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="sans-serif-smallcaps"
+                            android:text="@string/goal_text"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                            android:textColor="@color/tone1"
+                            android:textSize="@dimen/text_large"/>
+
+                        <EditText
+                            android:id="@+id/goal_input"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/edittext_border"
+                            android:hint="@string/daily_goal_editText"
+                            android:importantForAutofill="noExcludeDescendants"
+                            android:inputType="numberDecimal"
+                            android:textColorHint="@color/Hint"
+                            tools:ignore="TextContrastCheck,TouchTargetSizeCheck"
+                            android:layout_marginRight="10dp"/>
+
+                        <Button
+                            android:id="@+id/save_goal_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/button_background"
+                            android:text="@string/save_goal"
+                            tools:ignore="SmallSp"
+                            android:textColor="@color/white"/>
+                    </LinearLayout>
+
+                    <!-- No Transactions Message -->
+                    <TextView
+                        android:id="@+id/no_transactions_message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/no_transactions_available"
+                        android:textSize="@dimen/text_medium"
+                        android:textColor="@android:color/darker_gray"
+                        android:visibility="gone" />
+
+                    <!-- Bill List -->
+                    <LinearLayout
+                        android:id="@+id/bill_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="8dp" />
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <!-- ปุ่มสรุปและเพิ่มบิล -->
+        <ImageButton
+            android:id="@+id/addTransactionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:contentDescription="@string/add_income"
+            android:src="@drawable/ic_add" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/conclusionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/conclusion"
+                android:background="@drawable/button_background"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

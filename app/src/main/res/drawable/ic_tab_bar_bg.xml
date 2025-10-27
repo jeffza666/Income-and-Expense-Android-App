@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/tone1" /> <!-- สีพื้นหลังของปุ่ม -->
+    <corners android:radius="0dp" /> <!-- ปรับ radius ตามที่ต้องการ -->
+    <stroke
+        android:color="@color/tone1" />
+</shape>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="@dimen/text_size_large"
+        android:layout_marginEnd="@dimen/text_size_large"
+        android:layout_marginTop="@dimen/text_size_small">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/choose_lang"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/btn_cancel"
+                android:layout_width="@dimen/text_medium"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/text_size_large"
+                android:gravity="end"
+                android:src="@drawable/cross_button" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_eng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/eng_ver"
+        android:background="@drawable/button_background"
+        android:layout_marginStart="@dimen/icon_size_large"
+        android:layout_marginEnd="@dimen/icon_size_large"
+        android:layout_marginTop="@dimen/text_size_small"
+        android:textColor="@color/white"
+        />
+
+    <Button
+        android:id="@+id/btn_th"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/th_ver"
+        android:background="@drawable/button_background"
+        android:layout_marginTop="@dimen/text_size_small"
+        android:layout_marginStart="@dimen/icon_size_large"
+        android:layout_marginEnd="@dimen/icon_size_large"
+        android:layout_marginBottom="@dimen/text_size_large"
+        android:textColor="@color/white" />
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="Hint">#adadad</color>
+    <color name="tone1">#8795ba</color>
+    <color name="tone2">#87b9ac</color>
+    <color name="tone3">#c3e1d5</color>
+    <color name="tone4">#f8f7f2</color>
+    <color name="tone5">#4561aa</color>
+    <color name="tone6">#edf1fb</color>
+    <color name="yellow">#ffde59</color>
+    <color name="red1">#eb836c</color>
+    <color name="red2">#f2b3a5</color>
+</resources>

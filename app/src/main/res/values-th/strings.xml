@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pocket</string>
+    <string name="hello_blank_fragment">สวัสดีชิ้นส่วนเปล่า</string>
+    <string name="user_icon">ไอคอนผู้ใช้</string>
+    <string name="pocket">กระเป๋า</string>
+    <string name="ach_icon">อาชิคอน</string>
+    <string name="history">ประวัติ</string>
+    <string name="goal_text">เป้าหมาย</string>
+    <string name="daily_goal_editText">เป้าหมายรายวัน</string>
+    <string name="no_transactions_available">ไม่มีธุรกรรมใดๆ</string>
+    <string name="add_income">เพิ่มรายได้</string>
+    <string name="salary">เงินเดือน</string>
+    <string name="other_income">รายได้อื่น ๆ</string>
+    <string name="transfer_in">โอนเข้า</string>
+    <string name="interest_income">รายได้ดอกเบี้ย</string>
+    <string name="food_beverages">อาหารและเครื่องดื่ม</string>
+    <string name="bills_utilities">บิลค่าใช้จ่ายและสาธารณูปโภค</string>
+    <string name="shopping">ช้อปปิ้ง</string>
+    <string name="family">ครอบครัว</string>
+    <string name="travel">ท่องเที่ยว</string>
+    <string name="health_fitness">สุขภาพ</string>
+    <string name="education">การศึกษา</string>
+    <string name="entertainment">ความบันเทิง</string>
+    <string name="giving_donations">การบริจาค</string>
+    <string name="insurance">ประกันภัย</string>
+    <string name="investment">การลงทุน</string>
+    <string name="other_expenses">ค่าใช้จ่ายอื่นๆ</string>
+    <string name="add_transaction">เพิ่มรายการธุรกรรม</string>
+    <string name="income">รายรับ</string>
+    <string name="outcome">รายจ่าย</string>
+    <string name="add">เพิ่ม</string>
+    <string name="enter_amount">กรอกจำนวนเงิน</string>
+    <string name="conclusion">สรุป</string>
+    <string name="search_bill">ค้นหาบิล</string>
+    <string name="calendar_icon">ปฏิทิน</string>
+    <string name="Select_date">วันที่เลือก</string>
+    <string name="summary_of_expenses">สรุปค่าใช้จ่าย</string>
+    <string name="loading">กำลังโหลด...</string>
+    <string name="selected_date">วันที่เลือก</string>
+    <string name="status_image">สถานะรูปภาพ</string>
+    <string name="back">กลับ</string>
+    <string name="income_and_expense_summary">สรุปรายรับและรายจ่าย</string>
+    <string name="total_0_00">รวม: 0.00</string>
+    <string name="display_data">แสดงข้อมูล</string>
+    <string name="yearly">รายปี</string>
+    <string name="monthly">รายเดือน</string>
+    <string name="Delete_date">ลบข้อมูลทั้งหมด</string>
+    <string name="Language">ภาษา</string>
+    <string name="Size">ขนาดตัวอักษร</string>
+    <string name="Settings">ตั้งค่า</string>
+    <string name="choose_lang">เลือกภาษา</string>
+    <string name="eng_ver">English</string>
+    <string name="th_ver">ภาษาไทย</string>
+    <string name="choose_font">ขนาดตัวอักษร</string>
+    <string name="s_large">ใหญ่</string>
+    <string name="s_small">เล็ก</string>
+    <string name="s_medium">กลาง</string>
+    <string name="backHP">กลับสู่หน้าหลัก</string>
+    <string name="save_goal">บันทึก</string>
+    <string name="cancel">ยกเลิก</string>
+    <string name="please_fill_in">กรุณากรอกข้อมูลให้ครบ</string>
+    <string name="enter_valid_amount">กรุณากรอกจำนวนเงินที่ถูกต้อง</string>
+    <string-array name="income_categories">
+        <item>เงินเดือน</item>
+        <item>รายได้อื่น ๆ</item>
+        <item>โอนเข้า</item>
+        <item>ดอกเบี้ย</item>
+    </string-array>
+    <string-array name="outcome_categories">
+        <item>อาหารและเครื่องดื่ม</item>
+        <item>ค่าสาธารณูปโภค</item>
+        <item>ช้อปปิ้ง</item>
+        <item>ของใช้ในบ้าน</item>
+        <item>ครอบครัว</item>
+        <item>การเดินทาง</item>
+        <item>สุขภาพและฟิตเนส</item>
+        <item>การศึกษา</item>
+        <item>ความบันเทิง</item>
+        <item>บริจาคและการให้</item>
+        <item>ประกัน</item>
+        <item>ค่าใช้จ่ายอื่น ๆ</item>
+    </string-array>
+    <string-array name="months_array">
+        <item>มกราคม</item>
+        <item>กุมภาพันธ์</item>
+        <item>มีนาคม</item>
+        <item>เมษายน</item>
+        <item>พฤษภาคม</item>
+        <item>มิถุนายน</item>
+        <item>กรกฎาคม</item>
+        <item>สิงหาคม</item>
+        <item>กันยายน</item>
+        <item>ตุลาคม</item>
+        <item>พฤศจิกายน</item>
+        <item>ธันวาคม</item>
+    </string-array>
+
+    <string-array name="years_array">
+        <item>2022</item>
+        <item>2023</item>
+        <item>2024</item>
+        <item>2025</item>
+    </string-array>
+    <string name="enter_numbers_only">กรุณากรอกตัวเลขเท่านั้น</string>
+    <string name="currency_unit">บาท</string>
+    <string name="delete">ลบ</string>
+    <string name="confirm_delete">ยืนยันการลบ</string>
+    <string name="are_you_sure_delete">คุณแน่ใจว่าจะลบรายการนี้ใช่ไหม?</string>
+    <string name="yes">ใช่</string>
+    <string name="no">ไม่</string>
+    <string name="transaction_deleted">ลบรายการแล้ว</string>
+    <string name="unable_to_delete_transaction">ไม่สามารถลบรายการได้</string>
+    <string name="edit">แก้ไข</string>
+    <string name="edit_transaction">แก้ไขรายการ</string>
+    <string name="save">บันทึก</string>
+    <string name="fill_all_fields">กรุณากรอกข้อมูลให้ครบถ้วน</string>
+    <string name="transaction_updated">รายการอัพเดทแล้ว</string>
+    <string name="failed_to_update_transaction">ไม่สามารถอัพเดทรายการได้</string>
+    <string name="transaction_saved">บันทึกรายการแล้ว</string>
+    <string name="selected_date_message">วันที่ที่เลือก: %1$s</string>
+    <string name="spending_goal_exceeded">คุณได้ใช้จ่ายเกินเป้าหมายแล้ว!</string>
+    <string name="spending_goal_met">คุณได้บรรลุเป้าหมายการใช้จ่ายพอดี!</string>
+    <string name="spending_below_goal">การใช้จ่ายของคุณต่ำกว่าเป้าหมาย!</string>
+    <string name="invalid_goal_input">กรุณากรอกเป้าหมายการใช้จ่ายเป็นตัวเลข</string>
+    <string name="enter_spending_goal">กรุณากรอกเป้าหมายการใช้จ่ายของคุณ</string>
+    <string name="no_transactions_for_date">ไม่พบข้อมูลธุรกรรมสำหรับวันที่ที่เลือก</string>
+    <string name="select_date_first">กรุณาเลือกวันที่ก่อน</string>
+    <string name="goal_saved_successfully">บันทึกเป้าหมายสำหรับวันที่ %1$s สำเร็จ!</string>
+    <string name="enter_goal_amount">กรุณากรอกจำนวนเป้าหมาย</string>
+    <string name="daily_total_message">ยอดรวมรายวัน: %1$d\nเป้าหมาย: %2$.2f\n%3$s</string>
+    <string name="selected_datecon">วันที่: %1$s</string>
+    <string name="total_income_month">รายรับทั้งหมดของเดือน: %1$.2f บาท</string>
+    <string name="total_expense_month">รายจ่ายทั้งหมดของเดือน: %1$.2f บาท</string>
+    <string name="total_income_year">รายรับทั้งหมดของปี: %1$.2f บาท</string>
+    <string name="total_expense_year">รายจ่ายทั้งหมดของปี: %1$.2f บาท</string>
+    <string name="income_label">รายรับ: %1$.2f บาท</string>
+    <string name="expense_label">รายจ่าย: %1$.2f บาท</string>
+    <string name="no_data_found">ไม่พบข้อมูลสำหรับช่วงเวลาที่เลือก</string>
+    <string name="no_data_available">ไม่มีข้อมูลสำหรับช่วงเวลาที่เลือก</string>
+    <string name="confirm_delete_title">ยืนยันการลบ</string>
+    <string name="confirm_delete_message">คุณแน่ใจหรือไม่ว่าต้องการลบข้อมูลทั้งหมด?</string>
+    <string name="deleted_all_data">ลบข้อมูลทั้งหมดแล้ว</string>
+
+
+</resources>

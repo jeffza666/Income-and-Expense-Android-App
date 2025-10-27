@@ -1,0 +1,239 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomeFragment"
+    tools:ignore="VisualLintBounds">
+
+    <!-- ส่วน Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/tone1"
+        android:padding="8dp"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/pocket"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        >
+
+        <EditText
+            android:id="@+id/searchBillText"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:autofillHints=""
+            android:background="@drawable/edittext_background"
+            android:drawableStart="@drawable/ic_search"
+            android:drawablePadding="10dp"
+            android:hint="@string/search_bill"
+            android:padding="10dp"
+            android:textColorHint="@color/Hint"
+            android:layout_marginBottom="5dp"
+            tools:ignore="TextContrastCheck,TextFields,TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/editTextDate"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+
+            android:background="@drawable/edittext_background"
+            android:drawableStart="@drawable/baseline_calendar_month_24"
+            android:gravity="center"
+            android:hint="@string/Select_date"
+
+            android:padding="@dimen/text_size_small"
+            android:textColorHint="@color/Hint" />
+
+    </LinearLayout>
+
+    <!-- CalendarView สำหรับเลือกวันที่ -->
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/ic_calender_background"
+        android:dateTextAppearance="@style/CalenderViewDateCustomText"
+        android:theme="@style/CalendarViewCustom"
+        android:weekDayTextAppearance="@style/CalenderViewWeekCustomText"/>
+
+    <TextView
+        android:id="@+id/History_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/history"
+        android:textSize="@dimen/text_large"
+        android:textStyle="bold"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/tone1" />
+
+    <LinearLayout
+        android:id="@+id/history_list_main"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/border_background">
+
+        <!-- ScrollView สำหรับรายการบิล -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:minHeight="120dp"
+            tools:ignore="UselessParent">
+
+            <LinearLayout
+                android:id="@+id/history_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:id="@+id/Goal_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/goal_message"
+                        android:layout_width="168dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-smallcaps"
+                        android:text="@string/goal_text"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textColor="@color/tone1"
+                        android:textSize="@dimen/text_large"/>
+
+                    <EditText
+                        android:id="@+id/goal_input"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/edittext_border"
+                        android:hint="@string/daily_goal_editText"
+                        android:importantForAutofill="noExcludeDescendants"
+                        android:inputType="numberDecimal"
+                        android:textColorHint="@color/Hint"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        tools:ignore="TextContrastCheck,TouchTargetSizeCheck"
+                        android:layout_marginRight="10dp"/>
+
+
+                    <Button
+                        android:id="@+id/save_goal_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/button_background"
+                        android:text="@string/save_goal"
+                        android:textColor="@color/white"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        tools:ignore="SmallSp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/no_transactions_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no_transactions_available"
+                    android:visibility="gone"
+                    android:gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:textSize="@dimen/text_medium"
+                    android:textColor="@android:color/darker_gray" />
+
+                <!-- รายการบิล -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/bill_list"
+                    android:padding="8dp"
+                    android:layout_marginHorizontal="12dp" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+    <ImageButton
+        android:id="@+id/addTransactionButton"
+
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="end"
+        android:layout_marginEnd="@dimen/text_size_large"
+        android:background="@drawable/button_background"
+        android:contentDescription="@string/add_income"
+        android:gravity="right"
+        android:src="@drawable/ic_add"
+
+        tools:ignore="TouchTargetSizeCheck,ImageContrastCheck" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right|center_horizontal"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/text_size_large"
+            android:layout_marginEnd="@dimen/text_size_large"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp">
+
+            <Button
+                android:id="@+id/conclusionButton"
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/button_background"
+                android:text="@string/conclusion"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
